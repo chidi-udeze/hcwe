@@ -1,0 +1,21 @@
+{
+    "title":"What’s Special",
+    "cards":[
+        {
+            "title":"Personalized Care",
+            "content":"Together, we’ll create a customized plan that addresses your unique needs, focusing on prevention, management, and living well with chronic conditions."
+        },
+        {
+            "title":"Expert Guidance",
+            "content":"With my background in nursing and health coaching, I bring a compassionate, evidence-based approach to help you take control of your health."
+        },
+        {
+            "title":"Holistic Support",
+            "content":"Whether you're managing diabetes, heart disease, or other chronic illnesses, I'll guide you through every step of the way, ensuring you have the tools and confidence to thrive."
+        },
+        {
+            "title":"Empowerment & Education",
+            "content":"Knowledge is power. I’ll provide you with the latest insights and strategies to prevent illness, manage symptoms, and enhance your quality of life."
+        }
+    ]
+}
