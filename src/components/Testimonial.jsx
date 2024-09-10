@@ -13,7 +13,7 @@ export function Testimonial(props) {
                     {
                         data.testimonials.map((testimonial,index)=>{
                             return(
-                                <TestimonialCard key={index} type={index%2==0?'outline':'filled'} text={testimonial.text} author={testimonial.author}/>
+                                <TestimonialCard key={index} type={index%2===0?'outline':'filled'} text={testimonial.text} author={testimonial.author}/>
                             )
                         })
                     }

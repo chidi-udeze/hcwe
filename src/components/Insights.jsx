@@ -11,7 +11,7 @@ export function Insights(props) {
                 <p>{data.subtitle}</p>
                 <div className='grid grid-flow-col gap-8 overflow-x-scroll max-w-screen'>
                     {data.blogs.map((blog,index)=>{
-                        return (<BlogCard key={index} className="w-[500px]" title={blog.title} type={index%2==0?'bg-dark':'bg-light'} description={blog.description} />)
+                        return (<BlogCard key={index} className="w-[500px]" title={blog.title} type={index%2===0?'bg-dark':'bg-light'} description={blog.description} />)
                     })}
 
                 </div>
