@@ -1,7 +1,7 @@
-import Button from './Button';
 import { Stats } from './Stats';
 import aboutbg from '../assets/img/about-bg.png';
 import data from '../data/about.json';
+import { BookAnAppointmentButton } from './BookAnAppointment.button';
 
 export default function About(props) {
     return (
@@ -24,7 +24,7 @@ export default function About(props) {
           <div className='sm:w-1/3 md:w-1/2 flex flex-col gap-3 text-dark z-0 justify-center'>
             <h3 className='font-black text-2xl'>{data.title}</h3>
             <p className=''>{data.paragraph}</p>
-            <div className='flex gap-4'><Button>Book an Appointment</Button></div>
+            <div className='flex gap-4'><BookAnAppointmentButton/></div>
           </div>
         </div>
       </section>
