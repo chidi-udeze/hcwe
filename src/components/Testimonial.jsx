@@ -7,7 +7,7 @@ export function Testimonial(props) {
     
 
     return (
-        <section className=" w-screen bg-primary z-0 py-20 px-20 flex flex-col gap-8 relative">
+        <section className=" w-screen bg-primary z-0 py-20 px-5 md:px-20 flex flex-col gap-8 relative">
                 <h3 className='font-black text-light text-2xl'>{data.title}</h3>
                 <div className='flex overflow-x-auto gap-4'>
                     {

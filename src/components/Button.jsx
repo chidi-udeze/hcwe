@@ -7,7 +7,7 @@ export default function Button({type="cta", children,...rest}) {
     const outlineClasses = ' border-primary border-2 text-primary rounded-3xl hover:bg-primary hover:text-light transition-bg transition-text ease duration-300'
     const classNames = `${defaultNames} ${type==="cta" ? ctaClasses : type==="outline" ? outlineClasses  : ctaWhiteClasses}`
     return (
-        <button {...rest} className={classNames}>
+        <button {...rest} className={`${classNames} ${rest.className}`}>
             {children}
         </button>
     )

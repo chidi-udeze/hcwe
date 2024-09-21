@@ -28,16 +28,33 @@ export function Insights(props) {
     console.error('Error:', error);
   });
     },[])
-
+    // useEffect(() => {
+    //     // Scroll the video container to the right on component mount
+    //     const videoContainer = document.getElementById('video-container');
+    //     if (videoContainer) {
+    //       videoContainer.scrollLeft = videoContainer.scrollWidth;
+    //     }
+    //   }, []);
     return (
-        <section className=" w-screen bg-light relative z-0 py-20 px-20 flex flex-col gap-8">
+        <section className=" w-screen bg-light relative z-0 py-20 px-5 md:px-20 flex flex-col gap-8">
                 <h3 className='font-black text-dark text-2xl'>{data.title}</h3>
                 <p>{data.subtitle}</p>
                 <div className='grid grid-flow-col gap-8 overflow-x-scroll max-w-screen'>
                     {articles.map((blog,index)=>{
-                        return (<BlogCard key={index} url={blog.url} className="w-[500px]" title={blog.title} type={index%2===0?'bg-dark':'bg-light'} description={blog.description} />)
+                        return (<BlogCard key={index} url={blog.url} className="w-[250px] sm:w-[400px] md:w-[500px]" title={blog.title} type={index%2===0?'bg-dark':'bg-light'} description={blog.description} />)
                     })}
 
+                </div>
+                <div id="video-container" className='grid grid-flow-col gap-8 overflow-x-scroll max-w-screen'>
+                    {
+                        data.videos.map((video,index)=>{
+                            return (
+                                <div className='overflow-hidden rounded-[25px] w-[250px] sm:w-[400px] md:w-[500px] h-fit' key={index}>
+                                <iframe className='w-[250px] sm:w-[400px] md:w-[500px]' height={250}  src={video} frameborder="0" title={index}></iframe>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
         </section>
     )

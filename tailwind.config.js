@@ -12,6 +12,7 @@ module.exports = {
         'light': "#F1F2F3",
         'secondary': "#127FA8",
         'ternary': "#E6B554",
+        'ternary-light': "#E6B55425",
       }
     },
   },
@@ -25,7 +26,8 @@ module.exports = {
     'text-primary',
     'text-secondary',
     'text-ternary',
-    'primary-light'
+    'primary-light',
+    'ternary-light'
   ],
   plugins: [],
 }
