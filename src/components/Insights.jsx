@@ -50,7 +50,7 @@ export function Insights(props) {
                         data.videos.map((video,index)=>{
                             return (
                                 <div className='overflow-hidden rounded-[25px] w-[250px] sm:w-[400px] md:w-[500px] h-fit' key={index}>
-                                <iframe className='w-[250px] sm:w-[400px] md:w-[500px]' height={250}  src={video} frameborder="0" title={index}></iframe>
+                                <iframe className='w-[250px] sm:w-[400px] md:w-[500px]' height={250}  src={video} frameBorder="0" title={index}></iframe>
                                 </div>
                             )
                         })
