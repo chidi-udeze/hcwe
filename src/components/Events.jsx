@@ -12,7 +12,7 @@ export function Events(props) {
                     {
                         data.events.map((event, index)=>{
                             return (
-                                <EventCard index={index} event={event}/>
+                                <EventCard key={index} event={event}/>
                             )
                         })
                     }
