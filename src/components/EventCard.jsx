@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from './Button'
 
-export function EventCard({key, event}) {
+export function EventCard({index, event}) {
     const onClick=()=>{window.open(event.link, '_blank').focus()}
 
     return (
-        <div className='flex gap-4 flex-col w-fit items-center' key={key}>
+        <div className='flex gap-4 flex-col w-fit items-center' key={index}>
             <div className='flex gap-1 flex-col w-fit'>
                 <h3 className='text-lg font-bold text-secondary'>{event.title}</h3>
                 <div className='flex flex-wrap justify-between gap-2'>
