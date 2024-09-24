@@ -19,7 +19,7 @@ import React from 'react'
            <span className='flex gap-3'>
              {
                references.socials.map((social, index) => {
-                 return <img onClick={() => { visitLink(social.link) }} key={index} className='object-contain h-[30px]' src={window.getPublicUrl(social.iconImg)} alt={social.name} />
+                 return <img onClick={() => { visitLink(social.link) }} key={index} className='object-contain h-[30px] cursor-pointer' src={window.getPublicUrl(social.iconImg)} alt={social.name} />
                })
              }
            </span>
