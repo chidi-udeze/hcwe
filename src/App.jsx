@@ -9,6 +9,10 @@ import { Testimonial } from './components/Testimonial';
 import { Events } from './components/Events';
 
 function App() {
+  // Helper function to get the correct public URL
+  window.getPublicUrl = (path) => {
+    return process.env.PUBLIC_URL + path;
+  }
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const insightsRef = useRef(null);
