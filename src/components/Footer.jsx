@@ -11,7 +11,7 @@ import React from 'react'
          <img src={window.getPublicUrl("/assets/img/logo.png")} alt="logo" className='logo w-fit' />
          <p className='text-xs text-justify items-center hidden md:flex'>Your health is our priority. Let us partner with you on your journey to better health and wellbeing. Visit us today and take the first step towards a healthier future.</p>
          <div className='flex flex-col gap-4 items-end'>
-            <span className='flex flex-col gap-0'>
+            <span className='flex flex-col gap-0 items-end'>
                 {references.email && <a href={`mailto:${references.email}}`} className='underline'>{references.email}</a>}
                 {references.phone && <a href={`tel:${references.phone}}`} className='underline'>{references.phone}</a>}
             </span>
